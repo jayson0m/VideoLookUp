@@ -1,0 +1,10 @@
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.deps.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.runtimeconfig.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.runtimeconfig.dev.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.dll
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.pdb
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/obj/Release/netcoreapp2.0/QUVideoLinkArchive.csproj.CoreCompileInputs.cache
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/obj/Release/netcoreapp2.0/QUVideoLinkArchive.AssemblyInfoInputs.cache
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/obj/Release/netcoreapp2.0/QUVideoLinkArchive.AssemblyInfo.cs
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/obj/Release/netcoreapp2.0/QUVideoLinkArchive.dll
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Back-end/QUVideoLinkArchive/obj/Release/netcoreapp2.0/QUVideoLinkArchive.pdb

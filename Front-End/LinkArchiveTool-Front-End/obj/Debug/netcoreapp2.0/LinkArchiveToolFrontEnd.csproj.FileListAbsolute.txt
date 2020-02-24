@@ -1,0 +1,10 @@
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.deps.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.runtimeconfig.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.runtimeconfig.dev.json
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.dll
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.pdb
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.csproj.CoreCompileInputs.cache
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.AssemblyInfoInputs.cache
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.AssemblyInfo.cs
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.dll
+/Volumes/Jay/Visual Studio/Git-Reps/IMCVideoLookup/Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp2.0/LinkArchiveToolFrontEnd.pdb

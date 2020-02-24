@@ -1,0 +1,46 @@
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive-Front-End\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive Front-End\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\QU Video Link Archive\QU Video Link Archive\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.csproj.CoreCompileInputs.cache
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Debug\netcoreapp1.1\QUVideoLinkArchive.pdb

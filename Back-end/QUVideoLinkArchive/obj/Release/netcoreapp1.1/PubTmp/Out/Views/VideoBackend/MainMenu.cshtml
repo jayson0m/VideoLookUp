@@ -1,0 +1,82 @@
+
+@{
+	ViewData["Title"] = "Menu";
+	
+}
+<style>
+	.card {
+		border: solid;
+		border-width: 1px;
+		border-color:white;
+		background-color: ghostwhite;
+		max-width: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 20px;
+		margin-bottom: 10px;
+		height: 210px;
+		color: #666666;
+	}
+		.card:hover {
+			background-color: orange;
+			border-color: #666666;;
+		}
+
+	i {
+		font-size:65px;
+	}
+
+
+
+</style>
+
+<h2>Video Database Tools</h2>
+
+@*
+	<ul>
+		<li>@Html.ActionLink("Link List", "ListLinks")</li>
+		<li>@Html.ActionLink("Add New Link", "AddLink")</li>
+		<li>@Html.ActionLink("Add New Tag", "addTag")</li>
+		<li>@Html.ActionLink("User Manager", "UserPage")</li>
+	</ul>
+*@
+
+<div class="col-lg-12">
+	<div class="row">
+
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center card" id="AddLink">
+			<i class="glyphicon glyphicon-plus"></i>
+			<h1>Add Video</h1>
+			<p>Add a new link</p>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center card" id="ListLinks">
+			<i class="glyphicon glyphicon-pencil"></i>
+			<h1>Modify Video</h1>
+			<p>List all links as well as edit.</p>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center card" id="addTag">
+			<i class="glyphicon glyphicon-tag"></i>
+			<h1>Add tag</h1>
+			<p>Add new tags that can be used when adding links </p>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center card" id="UserPage">
+			<i class="glyphicon glyphicon-user"></i>
+			<h1>User Manager</h1>
+			<p>Manage users</p>
+		</div>
+
+
+	</div>
+	
+</div>
+
+<script> 
+	$(document).on('click', '.card', function () { 
+		var path = this.id; 
+		window.location = path;
+
+
+	});
+
+
+</script>

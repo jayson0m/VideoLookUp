@@ -1,0 +1,123 @@
+﻿@model QUVideoLinkArchive.ViewModel.VideoBackendViewModel
+@{
+    ViewData["Title"] = "Rename tags";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Rename Tags</h1>
+        @* <a class="btn btn-default btn-lg col-xs-3 " href="./MainMenu">Main Menu</a> *@
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <strong>Hide/Show Groups</strong>
+        <ul class="list-inline">
+            <li><a href="#" onclick="javascript: showgroup('School');">School</a></li>
+            <li><a href="#" onclick="javascript: showgroup('Program');">Program</a></li>
+            <li><a href="#" onclick="javascript: showgroup('OtherTags');">OtherTags</a></li>
+            <li><a href="#" onclick="javascript: showgroup('Pillars');">Pillars</a></li>
+            <li><a href="#" onclick="javascript: showgroup('Events');">Events</a></li>
+            <li><a href="#" onclick="javascript: showgroup('Athletics');">Athletics</a></li>
+            <li><a href="#" onclick="javascript: showgroup('Geo');">Geo</a></li>
+
+        </ul>
+    </div>
+    <div class="col-xs-12">
+        <br/>
+        <table class="table table-bordered table-striped">
+            <tr>
+
+                <th>Group</th>
+                <th>Tag name</th>
+            </tr>
+
+            @foreach (var i in Model.GeneralTagList)
+            {
+                string tag = i.Tag;
+                string tag_id = i.Tag_ID;
+                string tag_group = i.Tag_Group;
+                string tdThingy = "td_" + tag_group + "_" + @tag_id;
+                string cssID = tag_group + "_" + @tag_id;
+
+                <tr class="@tag_group groups">
+                    <td>@tag_group</td>
+                    <td id="@tdThingy"><a href="#" data-tag="rename" id="@cssID" data-tagname="@tag" data-toggle="modal" data-target="#myModal">@tag</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        @using (Html.BeginForm(FormMethod.Post, new {id = "renametags"}))
+        {
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Rename Tag</h4>
+                </div>
+                <div class="modal-body">
+
+                    <input type="hidden" id="renameID" name="renameID"/>
+                    <input type="text" class="form-control" id="rename-tag" name="rename_tag"placeholder="New name for tag"/>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<script>
+    $( "[data-tag]").click(function() {
+        console.log(this.id);
+        $('#renameID').val(this.id);
+        $('#rename-tag').val($(this).attr("data-tagname"));
+		
+        setTimeout(function() {
+                console.log("setting");
+                $('#rename-tag').focus();
+            },
+            500);
+    } );
+
+    function showgroup(tagcat) {
+        $(".groups").hide();
+        $("." + tagcat).show();
+    }
+
+    function onsub()
+    {
+        var checks = document.getElementsByClassName("checkbox");
+        $('#deleteThese').val("");
+
+        for (var x = 0; x < checks.length; x++)
+        {
+			
+            if ($('#' + checks[x].id).prop('checked') == true)
+            {
+                console.log(checks[x].id + $('#' + checks[x].id).prop('checked'));
+                var pl = checks[x].id;
+                var boxCont = $('#deleteThese').val() + pl + "|";
+
+                $('#deleteThese').val(boxCont);
+
+
+            }
+
+        }
+        $('#jayAdmin').submit();
+		
+    }
+
+
+</script>

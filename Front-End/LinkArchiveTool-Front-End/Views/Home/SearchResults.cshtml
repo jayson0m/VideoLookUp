@@ -1,0 +1,58 @@
+﻿@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@
+@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@
+@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@
+@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@@* Not used *@
+
+
+
+
+
+
+
+
+@model LinkArchiveToolFrontEnd.ViewModel.HomeViewModel
+
+@{
+	ViewData["Title"] = "Search Results";
+}
+
+
+
+<table class="table table-hover">
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>URL</th>
+		<th>Duration</th>
+		<th>Type</th>
+		<th>Date Completed</th>
+	</tr>
+
+	@{ 
+		foreach(var i in Model.SearchResults)
+		{
+			string vidName = i.VideoName;
+			string desc = i.VideoDescription;
+			string url = i.Url;
+			string dur = i.Duration;
+			string vidtype = i.VideoType;
+			string datecomplete = i.DateCompleted.ToString("MM-dd-yyyy"); 
+
+			<tr>
+				<td>@vidName</td>
+				<td>@desc</td>
+				<td>@url</td>
+				<td>@dur</td>
+				<td>@vidtype</td>
+				<td>@datecomplete</td>
+			</tr>
+
+		}
+
+
+	}
+
+
+
+
+</table>

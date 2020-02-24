@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@model LinkArchiveToolFrontEnd.Models.Login
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*  
+
+*@
+
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <h1 id="headerH1">IMC Video Lookup</h1>
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            
+            <p>
+                <label for="username" class="sr-only">Enter Username</label>
+                @Html.TextBoxFor(m => m.Username, new {@class = "form-control input-lg", placeholder = "username", id = "username"})
+            </p>
+            
+            
+            <p>
+                <label for="password" class="sr-only">Enter Password</label>
+                @Html.PasswordFor(m => m.Password, new {@class = "form-control input-lg", placeholder = "password", id = "password"})
+            </p>
+            <button type="submit" class="btn btn-primary pull-right" id="login">Login</button>
+
+
+        }
+    </div>
+</div>
+<div class="col-lg-12 row"></div>

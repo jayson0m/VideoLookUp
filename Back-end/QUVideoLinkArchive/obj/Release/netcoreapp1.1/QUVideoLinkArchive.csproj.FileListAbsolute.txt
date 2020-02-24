@@ -1,0 +1,10 @@
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Release\netcoreapp1.1\QUVideoLinkArchive.deps.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Release\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Release\netcoreapp1.1\QUVideoLinkArchive.runtimeconfig.dev.json
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Release\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\bin\Release\netcoreapp1.1\QUVideoLinkArchive.pdb
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Release\netcoreapp1.1\QUVideoLinkArchive.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Release\netcoreapp1.1\QUVideoLinkArchive.csproj.CoreCompileInputs.cache
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Release\netcoreapp1.1\QUVideoLinkArchive.AssemblyInfo.cs
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Release\netcoreapp1.1\QUVideoLinkArchive.dll
+V:\Visual Studio\Git-Reps\Quinnipiac Productions\QU Video Link Back-end\QUVideoLinkArchive\obj\Release\netcoreapp1.1\QUVideoLinkArchive.pdb

@@ -1,0 +1,311 @@
+﻿:root {
+    --qu-header-color: #424b55;
+    --qu-comp-header: #40566f;
+    --qu-blue: #33658A; 
+    --qu-brown: #554542;
+    --qu-purple: #514255;
+    --qu-red: #E54B4B;
+    --qu-pale-aqua: #B7D1DA;
+    --qu-slate-grey: #2F4F4F;
+    
+    
+}
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.qucolor {
+	/* background-color: #424b55 !important; */
+    background-color: var(--qu-header-color) !important;
+}
+
+.quimg {
+	width: 150px;
+	height: auto;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+.red {
+    color: var(--qu-red);
+}
+
+.noborders > tbody > tr > td,
+.noborders > tbody > tr > th,
+.noborders > tfoot > tr > td,
+.noborders > tfoot > tr > th,
+.noborders > thead > tr > td,
+.noborders > thead > tr > th {
+    border: none !important;
+}
+
+
+#taglist ul {
+    padding-left: 0;
+    display: inline;
+    list-style-type: none;
+}
+
+.tag li {
+    list-style-type: none;
+    display: inline-block;
+    /*background: #147BD1;*/
+    background: var(--qu-blue);
+    
+    margin-right: 10px;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+    .tag li:after {
+        content: " x";
+        padding: 0px 0px 0px 4px;
+    }
+
+    .tag li:hover {
+        /*background: lightblue;*/
+        background: var(--qu-pale-aqua);
+    }
+
+.tagdiv {
+    display: inline-block;
+    /*background: #147BD1;*/
+    background: var(--qu-blue);
+    margin-right: 10px;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-right: 5px;
+    margin-top: 5px;
+    position: relative;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+    .tagdiv:hover {
+       /* background: lightblue;*/
+        background: var(--qu-pale-aqua);
+    }
+
+
+.url {
+	font-size: small;
+
+	padding: 0px 0 8px 0;
+	/*color: darkslategrey;*/
+	color: var(--qu-slate-grey);
+    overflow-wrap: break-word;
+}
+.searchDesc {
+	padding-bottom:5px;
+}
+
+.searchMeta {
+	font-size:small;
+	
+}
+.searchMeta span {
+	padding: 0px 10px 0px 5px;
+}
+
+
+.viddate {}
+.dur {}
+.vidtype {}
+
+
+
+.btn-default.active {
+	/*background-color: #147BD1 !important;*/
+	background-color: var(--qu-blue) !important;
+	color: white !important;
+}
+
+@media (min-width: 992px) {
+	.modal-dialog {
+		width: 50%;
+	}
+}
+
+.modal-body {
+	width: 100%;
+	overflow-y: auto !important;
+	max-height: 50% !important;
+	overflow-wrap: normal;
+}
+
+.form-group input {
+	width: 100% !important;
+}
+
+#SelectTags {
+	display: none;
+}
+
+.iconsize {
+	font-size: 24px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+#tips {
+	position: relative;
+}
+
+#tips-text {
+	display: none;
+}
+
+#headerH1 {
+	font-size: 36px;
+	font: 300 28px/ 36px "Open sans", "lucida grande", "Segoe UI", arial, verdana, tahoma, "Hiragino Kaku Gothic ProN", "Osaka", "Meiryo", "Yu Gothic", sans-serif;
+	color: rgba(0, 0, 0, 0.85);
+	
+}
+
+.biggertxt {
+	font-weight:700 !important;
+	font-stretch:ultra-expanded !important;
+	
+}
+
+
+.form-header {
+	padding-bottom:15px;
+}
+
+.tagCheck {
+	display: inline-block;
+	padding-left: 10px;
+	padding-top:8px;
+}
+.searchresult {
+    display: none;
+}
+
+.pagLinks a, a, .btn-link {
+    color: var(--qu-blue) !important;
+}
+
+a:hover, .btn-link:hover {
+    color: var(--qu-comp-header);
+}
+
+.btn-primary {
+    background-color: var(--qu-blue); 
+}
+.btn-primary:hover {
+    background-color: var(--qu-comp-header);
+}
+
+.panel-info > .panel-heading {
+    background-color: var(--qu-comp-header);
+    font: 300 28px/ 36px "Open sans", "lucida grande", "Segoe UI", arial, verdana, tahoma, "Hiragino Kaku Gothic ProN", "Osaka", "Meiryo", "Yu Gothic", sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+a.disabled {
+    /* Make the disabled links grayish
+    color: gray;*/
+    color: var(--qu-slate-grey);
+    
+    /* And disable the pointer events */
+    pointer-events: none;
+    font-size: 20px;
+    
+}
+
+
+
+/*
+.pagination-jm .pagLinks {
+    display:inline-block;
+    border:0;
+    width:30px;
+    height:auto;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.pagination-jm .pagLinks {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    
+    top: 0px;
+    z-index: 1;
+}
+
+.pagination-jm .pagLinks .disabled {
+    background-color: seashell;
+    z-index: 2;
+    
+}
+.pagination-jm .disabled:hover {
+    box-shadow: 0px 0px 550px 1px #000000;
+    z-index: 2 !important;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(2);     
+}
+*/

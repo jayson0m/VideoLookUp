@@ -1,0 +1,618 @@
+﻿@model LinkArchiveToolFrontEnd.ViewModel.HomeViewModel
+@{
+	ViewData["Title"] = "Search";
+}
+
+<div class="row">
+	<div class="container">
+		<div class="form-header">
+			<div id="tips">
+				<span id="headerH1">Brand Strategy Video Catalog Database</span>
+
+				<span class="pointer">Need Help?</span>
+			</div>
+			<div id="tips-text" class="panel panel-info panel-group col-xs-5 col-lg-offset-1">
+				<div class="panel-title panel-info"></div>
+				<div class="panel panel-heading">
+					Searching for videos?
+				</div>
+				<div class="panel-body">
+					<p>The search is quite flexible. Here are a few of tips: </p>
+					<ul>
+						<li>
+							Searching with no parameters will get you all the videos.
+						</li>
+						<li>
+							Selecting all tags from a category will get you all videos in that category.
+						</li>
+						<li>
+							entering just 'to' date will provide you all videos made before the date entered. And entering just 'from' date does the opposite.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "searchForm" }))
+		{
+			<div class="row">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="input-group">
+							<input type="text" class="form-control input-lg" id="searchMe" name="searchMe" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-primary btn-lg" id="searchBtn" type="button">
+									<i class="glyphicon glyphicon-search iconsize"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-right">
+
+					<button class="btn btn-link" type="button" id="selectTagsBtn">
+						Search Options...
+					</button>
+					<input type="hidden" name="alltags" id="alltags" />
+				</div>
+
+				<div class="row col-lg-12 panel" id="SelectTags">
+					<div class="col-lg-12 panel panel-title">
+						<br />
+						<span class="biggertxt">Basic Search Parameters</span>
+						<hr />
+					</div>
+
+					<div class="panel panel-body">
+						<div class="input-group col-xs-12">
+							<div class="col-xs-4">
+								<label for="dateFROM">
+									From
+								</label>
+								<input class="form-control" id="dateFROM" name="dateFROM" type="date" />
+
+							</div>
+							<div class="col-xs-4">
+								<label for="dateTO">
+									To
+								</label>
+								<input class="form-control" id="dateTO" name="dateTO" type="date" />
+
+							</div>
+							<div class="col-xs-4">
+								<label for="vidType">
+									Video Type
+								</label>
+								<input type="text" class="form-control" id="videoType" name="videoType" placeholder="Video Type" />
+							</div>
+						</div>
+						<br />
+						<strong>Video Categories</strong>
+						<p>Pick a category (or many) and select the tags you wish narrow down your search. </p>
+
+						@* Category Table *@
+
+						<div class="row">
+							<ul class="list-group list-inline">
+								<li class="list-group-item justify-content-between col-xs-4 col-md-4" id="Schools" onclick="">
+									<button type="button" id="SchoolsBtn" class="btn-link" data-toggle="modal" data-target="#schools">
+										Schools and Units
+									</button>
+									<span class="badge badge-default badge-pill"><span id="schools_count">0</span></span>
+								</li>
+								<li class="list-group-item justify-content-between  col-xs-4 col-md-4">
+									<button type="button" id="ProgramBtn" class="btn-link" data-toggle="modal" data-target="#Program">
+										Program
+									</button>
+									<span class="badge badge-default badge-pill"><span id="programs_count">0</span></span>
+								</li>
+								<li class="list-group-item justify-content-between  col-xs-4 col-md-4">
+									<button type="button" id="PillarsBtn" class="btn-link" data-toggle="modal" data-target="#Pillars">
+										Pillars
+									</button>
+									<span class="badge badge-default badge-pill"><span id="pillars_count">0</span></span>
+								</li>
+							</ul>
+							<ul class="list-group list-inline">
+								<li class="list-group-item justify-content-between  col-xs-4 col-md-4">
+									<button type="button" id="EventsBtn" class="btn-link" data-toggle="modal" data-target="#Events">
+										Events
+									</button>
+									<span class="badge badge-default badge-pill"><span id="events_count">0</span></span>
+								</li>
+								<li class="list-group-item justify-content-between  col-xs-4 col-md-4">
+									<button type="button" id="GeographicalBtn" class="btn-link" data-toggle="modal" data-target="#Geographical">
+										Geographical
+									</button>
+									<span class="badge badge-default badge-pill"><span id="geo_count">0</span></span>
+								</li>
+								<li class="list-group-item justify-content-between col-xs-4 col-md-4">
+									<button type="button" id="AthleticsBtn" class="btn-link" data-toggle="modal" data-target="#Athletics">
+										Athletics
+									</button>
+									<span class="badge badge-default badge-pill"><span id="athletics_count">0</span></span>
+								</li>
+							</ul>
+							<ul class="list-group list-inline">
+								<li class="list-group-item justify-content-between  col-xs-4 col-md-4">
+									<button type="button" id="OtherTagsBtn" class="btn-link" data-toggle="modal" data-target="#OtherTags">
+										Other Tags
+									</button>
+									<span class="badge badge-default badge-pill"><span id="other_count">0</span></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<br />
+							<p>Tags Selected: <span id="tagcount">Zero</span></p>
+							<div id="tagdiv" class="row">
+								<ul id="taglist" class="tag"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"><hr /></div>
+			</div>
+		}
+	</div>
+</div>
+
+<div class="row">
+	<div class="container">
+		@if (Model.returnMsg == "results")
+		{
+			string lastVidId = "";
+			foreach (var i in Model.SearchResults)
+			{
+				string vidName = i.VideoName;
+				string desc = i.VideoDescription;
+				string url = i.URL;
+				string dur = i.Duration;
+				string vidtype = i.VideoType;
+				string datecomplete = i.DateCompleted.ToString("MM-dd-yyyy");
+				if (lastVidId != i.vidID)
+				{
+					<div class="container">
+						<div class="row">
+							<strong><a href="@url" target="_blank">@vidName</a></strong>
+						</div>
+						<div class="row">
+							<div class="url">@url</div>
+						</div>
+						<div class="row">
+							<div class="searchDesc"> @desc</div>
+						</div>
+						<div class="row">
+							<div class="searchMeta">
+								<strong>Duration: </strong> <span>@dur</span>
+								<strong>Type: </strong> <span>@vidtype</span>
+								<strong>Date Completed: </strong> <span>@datecomplete</span>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					
+				}
+				lastVidId = i.vidID;
+			}
+			string csv = "";
+			csv = Model.CSVResults;
+			//(null, null, FormMethod.Post, new { id = "searchForm" }))
+			if (csv != "")
+			{
+				@using (Html.BeginForm("csvForm", null, FormMethod.Post, new { id = "CSVForm" }))
+				{
+					<input type="hidden" name="rawdata" value="@csv" />
+					<button class="btn-link pull-right" id="downloadcsv" type="button">Download as CSV</button>
+				}
+			}
+			else
+			{
+				<strong>No results found.</strong>
+			}
+		}
+	</div>
+</div>
+
+@* Schools Modal *@
+<div class="modal fade" id="schools" tabindex="-1" role="dialog" aria-labelledby="schools">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">School/Unit Tags</h4>
+			</div>
+			<div class="modal-body ">
+				<div class="form-inline">
+					@{
+						int count = 0;
+
+						@foreach (var a in Model.SchoolTags)
+						{
+							string tag = a.Tag;
+							string tagid = a.Tag_ID;
+							count++;
+
+							<div data-toggle='buttons' class="tagCheck">
+								<label class="btn btn-default">
+									<input type="checkbox" id="school-@tagid" class="tagbtn" name="school" value="@tag" autocomplete="off"> @tag
+								</label>
+							</div>
+						}
+					}
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@* Program Modal *@
+<div class="modal fade" id="Program" tabindex="-1" role="dialog" aria-labelledby="Program">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Program Tags</h4>
+			</div>
+			<div class="modal-body">
+				@{
+					count = 0;
+
+					@foreach (var a in Model.ProgramTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="Program-@tagid" class="tagbtn" name="Program" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+
+					}
+				}
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+@* Pillars Modal *@
+<div class="modal fade" id="Pillars" tabindex="-1" role="dialog" aria-labelledby="Pillars">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Pillar Tags</h4>
+			</div>
+			<div class="modal-body">
+
+				@{			
+					count = 0;
+
+					@foreach (var a in Model.PillarsTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="Pillars-@tagid" class="tagbtn" name="Pillars" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+					}
+				}
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@* Events Modal *@
+<div class="modal fade" id="Events" tabindex="-1" role="dialog" aria-labelledby="Events">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Event Tags</h4>
+			</div>
+			<div class="modal-body">
+
+				@{			
+					count = 0;
+
+					@foreach (var a in Model.EventsTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="Events-@tagid" class="tagbtn" name="Events" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+					}
+				}
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+@* Geographical Modal *@
+<div class="modal fade" id="Geographical" tabindex="-1" role="dialog" aria-labelledby="Geographical">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Geographical Tags</h4>
+			</div>
+			<div class="modal-body">
+
+				@{			count = 0;
+
+					@foreach (var a in Model.GeoTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="Geographical-@tagid" class="tagbtn" name="Geographical" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+					}
+				}
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+@* Athletics Modal *@
+<div class="modal fade" id="Athletics" tabindex="-1" role="dialog" aria-labelledby="Athletics">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Athletics Tags</h4>
+			</div>
+			<div class="modal-body">
+
+				@{			count = 0;
+
+					@foreach (var a in Model.AthleticsTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="Athletics-@tagid" class="tagbtn" name="Athletics" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+
+					}
+
+				}
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+@* Other Tags Modal *@
+<div class="modal fade" id="OtherTags" tabindex="-1" role="dialog" aria-labelledby="OtherTags">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Other Tags</h4>
+			</div>
+			<div class="modal-body">
+
+				@{			count = 0;
+
+					@foreach (var a in Model.OtherTags)
+					{
+						string tag = a.Tag;
+						string tagid = a.Tag_ID;
+						count++;
+
+
+						<div data-toggle='buttons' class="tagCheck">
+							<label class="btn btn-default">
+								<input type="checkbox" id="OtherTags-@tagid" class="tagbtn" name="OtherTags" value="@tag" autocomplete="off"> @tag
+							</label>
+						</div>
+
+					}
+
+
+
+				}
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+@* tag script *@
+<script>
+	$("#searchMe").keypress(function (e) {
+		if (e.which == 13) {
+			$("#searchBtn").click();
+		}
+	});
+
+
+	$('#selectTagsBtn').click(function () {
+		if ($('#SelectTags').is(':visible') == true) {
+			$('#SelectTags').slideUp();
+			return 0;
+		}
+		$('#SelectTags').slideDown();
+
+	});
+
+	$('#tips').click(function () {
+		if ($('#tips-text').is(':visible') == true) {
+			$('#tips-text').slideUp();
+			return 0;
+		}
+		$('#tips-text').slideDown();
+
+	});
+
+	$('#downloadcsv').click(function () {
+		$('#CSVForm').submit();
+	});
+
+	$('.tagbtn').change(function () {
+		if (this.checked) {
+			var aNode = {
+				category: this.name,
+				tag: this.value,
+				idname: this.id
+			};
+
+			var tagNode = document.createElement("li");
+			var t = document.createTextNode(aNode.tag);
+			tagNode.appendChild(t);
+			tagNode.setAttribute("id", aNode.idname + "tag");
+			tagNode.setAttribute("class", "tag");
+			tagNode.setAttribute("name", aNode.idname);
+			document.getElementById("taglist").appendChild(tagNode);
+			setcount();
+		}
+		else {
+			var tagname = this.id + "tag";
+			$("#" + tagname).remove();
+			setcount();
+		}
+	});
+
+	$(document).on('click', '.tag li', function () {
+		this.remove();
+		var checkid = this.getAttribute("name");
+		document.getElementById(checkid).click();
+	});
+
+	function getalltaginformation() {
+		var tags = document.getElementsByClassName("tagbtn");
+		var taglist = "";
+		for (var x = 0; x < tags.length; x++) {
+			if (tags[x].checked == true) {
+				taglist += tags[x].id + ","
+			}
+		}
+		$('#alltags').val(taglist);
+
+		console.log(taglist);
+	}
+
+	$('#searchBtn').click(function () {
+		getalltaginformation();
+		$('#searchForm').submit();
+	});
+
+
+	function setcount() {
+		var i = 0;
+		var eventcount = 0;
+		var schoolcount = 0;
+		var programcount = 0;
+		var pillarcount = 0;
+		var geocount = 0;
+		var athleticscount = 0;
+		var otherscount = 0;
+
+		var schools = document.getElementsByName("school");
+		var programs = document.getElementsByName("Program");
+		var pillars = document.getElementsByName("Pillars");
+		var geo = document.getElementsByName("Geographical");
+		var athletics = document.getElementsByName("Athletics");
+		var others = document.getElementsByName("OtherTags");
+		var events = document.getElementsByName("Events");
+
+		for (i = 0; i < schools.length; i++) {
+			if (schools[i].checked == true) {
+				schoolcount++;
+			}
+		}
+		for (i = 0; i < programs.length; i++) {
+			if (programs[i].checked == true) {
+				programcount++;
+			}
+		}
+		for (i = 0; i < pillars.length; i++) {
+			if (pillars[i].checked == true) {
+				pillarcount++;
+			}
+		}
+
+		for (i = 0; i < geo.length; i++) {
+			if (geo[i].checked == true) {
+				geocount++;
+			}
+		}
+
+		for (i = 0; i < athletics.length; i++) {
+			if (athletics[i].checked == true) {
+				athleticscount++;
+			}
+		}
+
+		for (i = 0; i < others.length; i++) {
+			if (others[i].checked == true) {
+				otherscount++;
+			}
+		}
+		for (i = 0; i < events.length; i++) {
+			if (events[i].checked == true) {
+				eventcount++;
+			}
+		}
+
+		var tagcount = otherscount + athleticscount + geocount + pillarcount + programcount + schoolcount + eventcount;
+
+		$('#schools_count').html(schoolcount);
+		$('#programs_count').html(programcount);
+		$('#pillars_count').html(pillarcount);
+		$('#geo_count').html(geocount);
+		$('#athletics_count').html(athleticscount);
+		$('#other_count').html(otherscount);
+		$('#events_count').html(eventcount);
+		$('#tagcount').html(inWords(tagcount));
+
+	}
+	$('.list-group-item').click(function () {
+		var btn = "#" + this.id + "Btn";
+		console.log(btn);
+		$('btn').click();
+	});
+
+</script>

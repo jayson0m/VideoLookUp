@@ -1,0 +1,109 @@
+
+.School,
+.Program,
+.Pillars,
+.OtherTags,
+.Geo,
+.Events,
+.Athletics {
+    display: none;
+}
+
+#entryBoxDiv {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#tagsAndAll {
+    display: none;
+}
+
+.closeBottom {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.tagBox {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.selectedBoxDiv {
+    top: 5px;
+    display: inline-block;
+    background: #fff;
+    margin-right: 40px;
+    padding: .2em .6em .3em;
+    font-size: 80%;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-right: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#error {
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    top: 55px;
+    border-radius: .12em;
+    border: solid;
+    border-width: 1px;
+    border-color: brown;
+    background-color: #e44900;
+    left: calc(100% - 355px);
+    left: -webkit-calc(100% - 355px);
+    left: -moz-calc(100% - 355px);
+    font-size: 12px;
+    display: none;
+}
+
+#errorInfo {
+    top: 16%;
+    left: 75px;
+    position: absolute
+}
+
+#invalid {
+    font-weight: 700;
+    color: ghostwhite;
+    top: 1px;
+    position: relative;
+}
+
+#notetext {
+    color: ghostwhite;
+    padding: 0px;
+    margin: 0px;
+    width: 270px;
+    word-wrap: normal;
+}
+
+#glyph {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    color: ghostwhite;
+    font-size: 40px;
+    left: 5px;
+    top: 10px;
+}
+
+#theEx {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    color: ghostwhite;
+    font-size: 15px;
+    left: 95%;
+    top: 3px;
+    position: absolute;
+}

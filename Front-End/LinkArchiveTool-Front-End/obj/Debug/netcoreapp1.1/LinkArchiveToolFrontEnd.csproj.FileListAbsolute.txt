@@ -1,0 +1,21 @@
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.deps.json
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.runtimeconfig.json
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.runtimeconfig.dev.json
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.dll
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/bin/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.pdb
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.csprojResolveAssemblyReference.cache
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.csproj.CoreCompileInputs.cache
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.AssemblyInfoInputs.cache
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.AssemblyInfo.cs
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.dll
+/Volumes/jay/Mac Projects/LinkArchiveTool-Front-End/LinkArchiveTool-Front-End/obj/Debug/netcoreapp1.1/LinkArchiveToolFrontEnd.pdb
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\bin\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.deps.json
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\bin\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.runtimeconfig.json
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\bin\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.runtimeconfig.dev.json
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\bin\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.dll
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\bin\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.pdb
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\obj\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.csprojResolveAssemblyReference.cache
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\obj\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.csproj.CoreCompileInputs.cache
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\obj\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.AssemblyInfo.cs
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\obj\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.dll
+V:\Visual Studio\Projects\LinkArchiveTool-Front-End - PC\LinkArchiveTool-Front-End\obj\Debug\netcoreapp1.1\LinkArchiveToolFrontEnd.pdb

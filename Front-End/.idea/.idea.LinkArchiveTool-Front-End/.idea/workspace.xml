@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c22e1370-b483-478e-bb10-18cd97ab48a1" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PackageTargetFallback</find>
+      <find>disabled</find>
+      <find>pagination</find>
+      <find>tagbtn</find>
+      <find>from</find>
+      <find>dateTo</find>
+      <find>dateFrom</find>
+      <find>csv</find>
+      <find>testBuild</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/QUToolsUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/AccountManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/login.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/SearchPage.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/SearchResults.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/CsvForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/ViewModel/HomeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/Home.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LinkArchiveTool-Front-End/ViewModel/AccountManagerViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/csvForm.cshtml" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/wwwroot/lib/bootstrap/dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/Home.cs" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/wwwroot/js/site.min.js" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/wwwroot/css/fonts.css" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/SearchPage.cshtml" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/wwwroot/js/site.js" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/appsettings.json" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/AccountManager.cs" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Models/login.cs" />
+        <option value="$PROJECT_DIR$/LinkArchiveTool-Front-End/Views/Home/Index.cshtml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YG3wanAqrqtwSPz4LRB4ePd85A" />
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Prod">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/LinkArchiveTool-Front-End/bin/Release/netcoreapp2.0/LinkArchiveToolFrontEnd.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LinkArchiveTool-Front-End" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LinkArchiveTool-Front-End/LinkArchiveToolFrontEnd.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prod" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/LinkArchiveTool-Front-End/bin/Release/netcoreapp2.0/LinkArchiveToolFrontEnd.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LinkArchiveTool-Front-End" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LinkArchiveTool-Front-End/LinkArchiveToolFrontEnd.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_publish-VideoLookup-Frontend" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Project.Prod" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c22e1370-b483-478e-bb10-18cd97ab48a1" name="Default" comment="" />
+      <created>1520867111366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520867111366</updated>
+      <workItem from="1520867112999" duration="36000" />
+      <workItem from="1520867351995" duration="845000" />
+      <workItem from="1520868216879" duration="2622000" />
+      <workItem from="1521033254702" duration="553000" />
+      <workItem from="1522163794664" duration="6572000" />
+      <workItem from="1522173007523" duration="91000" />
+      <workItem from="1522173117659" duration="8254000" />
+      <workItem from="1522244078508" duration="9993000" />
+      <workItem from="1522260709802" duration="189000" />
+      <workItem from="1522266860100" duration="571000" />
+      <workItem from="1522337062723" duration="117000" />
+      <workItem from="1522864171139" duration="2346000" />
+      <workItem from="1522935182347" duration="6270000" />
+      <workItem from="1533577162578" duration="1190000" />
+      <workItem from="1582555344603" duration="376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

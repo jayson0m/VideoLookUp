@@ -1,0 +1,71 @@
+@model QUVideoLinkArchive.ViewModel.VideoBackendViewModel
+
+@{
+    ViewData["Title"] = "Link List";
+}
+
+<style>
+	.tooltip-inner {
+		max-width: 350px;
+		text-align: left !important;
+	}
+</style>
+
+<div class="row">
+	<h1>Current Links</h1>
+
+</div>
+	<br />
+<br />
+
+	<p>Note: Hover over video name to see more meta info.  Click on link name to be redirected to video link</p>
+	
+
+
+<table class="table">
+	<tr>
+		<th>Video Name</th>
+		<th>Duration</th>
+		<th>VideoType</th>
+		<th>DateCompleted</th>
+		<th>AddedBy</th>
+		<th></th>
+	</tr>
+
+	@{ 
+		foreach(var i in Model.VideoInfo)
+		{
+			string videoname = i.VideoName;
+			string videodesc = i.VideoDescription;
+			string url = i.URL;
+			string datecompleted = i.DateCompleted.ToString("MM-dd-yyyy");
+			string duration = i.Duration;
+			string videotype = i.VideoType;
+			string addedby = i.Addedby;
+			string vidid = i.vidID; 
+
+			<tr>
+				<td><a href="@url" target="_blank" data-html="true" data-toggle="tooltip" data-placement="right" title="@videoname <br> Description: @videodesc <br> URL: @url">@videoname</a></td>
+				<td>@duration</td>
+				<td>@videotype</td>
+				<td>@datecompleted</td>
+				<td>@addedby</td>
+				<td><a href="EditLink?id=@vidid">Edit</a></td>
+			</tr>
+
+
+
+
+		}
+
+	}
+
+
+
+</table>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+

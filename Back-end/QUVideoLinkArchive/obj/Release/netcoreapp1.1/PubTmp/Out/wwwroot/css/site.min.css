@@ -1,0 +1,93 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 20px
+}
+
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.carousel-caption p {
+	font-size: 20px;
+	line-height: 1.4
+}
+
+.carousel-inner .item img[src$=".svg"] {
+	width: 100%
+}
+
+@media screen and (max-width: 767px) {
+	.carousel-caption {
+		display: none
+	}
+}
+
+.qucolor {
+	background-color: #0C2340 !important
+}
+
+.red {
+	color: red
+}
+
+.noborders > tbody > tr > td, .noborders > tbody > tr > th, .noborders > tfoot > tr > td, .noborders > tfoot > tr > th, .noborders > thead > tr > td, .noborders > thead > tr > th {
+	border: none !important
+}
+
+#taglist ul {
+	padding-left: 0;
+	display: inline;
+	list-style-type: none
+}
+
+.tag li {
+	list-style-type: none;
+	display: inline-block;
+	background: #147BD1;
+	margin-right: 10px;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	padding-right: 5px;
+	margin-top: 5px
+}
+
+	.tag li:after {
+		content: " x";
+		padding: 0px 0px 0px 4px
+	}
+
+	.tag li:hover {
+		background: lightblue
+	}
+
+.tagdiv {
+	display: inline-block;
+	background: #147BD1;
+	margin-right: 10px;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	padding-right: 5px;
+	margin-top: 5px;
+	position: relative;
+	min-width: 50px;
+	max-width: 200px
+}
+
+	.tagdiv:hover {
+		background: lightblue
+	}

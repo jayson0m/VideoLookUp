@@ -1,0 +1,438 @@
+@model QUVideoLinkArchive.ViewModel.VideoBackendViewModel
+@{
+	ViewData["Title"] = "Add Tag";
+}
+
+<style>
+	.School,
+	.Program,
+	.Pillars,
+	.OtherTags,
+	.Geo,
+	.Events,
+	.Athletics {
+		display: none;
+	}
+
+	#entryBoxDiv {
+		margin-top: 10px;
+		padding-top: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	#entryBox {
+	}
+
+	#tagsAndAll {
+		display: none;
+	}
+
+	.closeBottom {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.tagBox {
+		margin-top: 10px;
+		padding-top: 10px;
+	}
+
+	.selectedBoxDiv {
+		top: 5px;
+		display: inline-block;
+		background: #fff;
+		margin-right: 40px;
+		padding: .2em .6em .3em;
+		font-size: 80%;
+		font-weight: 700;
+		line-height: 1;
+		color: #000;
+		text-align: left;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: .25em;
+		padding-right: 5px;
+		margin-top: 10px;
+		padding-top: 10px;
+	}
+
+	#error {
+		width: 350px;
+		height: 80px;
+		position: absolute;
+		top: 55px;
+		border-radius: .12em;
+		border: solid;
+		border-width: 1px;
+		border-color: brown;
+		background-color: #e44900;
+		left: calc(100% - 355px);
+		left: -webkit-calc(100% - 355px);
+		left: -moz-calc(100% - 355px);
+		font-size: 12px;
+		display: none;
+	}
+
+	#errorInfo {
+		top: 16%;
+		left: 75px;
+		position: absolute
+	}
+
+	#invalid {
+		font-weight: 700;
+		color: ghostwhite;
+		top: 1px;
+		position: relative;
+	}
+
+	#notetext {
+		color: ghostwhite;
+		padding: 0px;
+		margin: 0px;
+		width: 270px;
+		word-wrap: normal;
+	}
+
+	#glyph {
+		position: relative;
+		padding: 0px;
+		margin: 0px;
+		color: ghostwhite;
+		font-size: 40px;
+		left: 5px;
+		top: 10px;
+	}
+
+	#theEx {
+		position: absolute;
+		padding: 0px;
+		margin: 0px;
+		color: ghostwhite;
+		font-size: 15px;
+		left: 95%;
+		top: 3px;
+		position: absolute;
+	}
+</style>
+
+<div class="row">
+
+	<h1>Add Tag</h1>
+	<a class="btn btn-default btn-lg col-xs-3 " href="./MainMenu">Main Menu</a>
+
+</div>
+	<div class="row"><hr /></div>
+	<div class="dropdown">
+
+		<select class="form-control input-group-lg" id="dropdownMenuButton" data-toggle="tooltip" title="Select which Category you'd like to add tags to.">
+			<option value="NA">Select A Category</option>
+			<option value="School">Schools and Units</option>
+			<option value="Program">Programs</option>
+			<option>Pillars</option>
+			<option>Events</option>
+			<option value="Geo">Geographic Locations</option>
+			<option>Athletics</option>
+			<option value="OtherTags">Other Tags</option>
+		</select>
+	</div>
+
+
+<div class="col-lg-12 row container-fluid" id="tagsAndAll">
+	<div class="selectedBoxDiv col-lg-1 col-md-1 col-sm-1"><span id="selectedBox"></span></div>
+	<div class="tagBox col-lg-7 col-md-7 col-sm-7">
+
+		@{
+
+			foreach (var i in Model.SchoolTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.ProgramTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.PillarsTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.OtherTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.GeoTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.EventsTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+			foreach (var i in Model.AthleticsTags)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string entname = "0_" + tag_group + "_" + tag_id;
+				<div name="@entname" id="@entname" class="tagdiv @tag_group">
+					@tag
+				</div>
+			}
+		}
+	</div>
+	<div id="entryBoxDiv" class="col-lg-3 col-md-3 col-xs-5 pull-right">
+		<div class="closeBottom input-group">
+			<input class="form-control" id="entryBox" placeholder="Enter New Tag" />
+			<span class="input-group-btn">
+				<button data-toggle="tooltip" title="Add a new tag" class="btn btn-primary" id="addTag">Add</button>
+			</span>
+		</div>
+		<div class="col-xs-2 col-xs-2">
+
+		</div>
+	</div>
+	@using (Html.BeginForm(FormMethod.Post, new { id = "addtagsForm" }))
+	{
+		<div class="col-xs-12 row">
+			<br />
+			<button onclick="javascript: submitform();" type="button" id="submitTags" class="btn btn-lg btn-primary" data-toggle="tooltip"
+					title="Click this button when you are finished entering in all tags.">
+				Commit New Tags
+			</button>
+
+			<button onclick="javascript: submitformDel();" type="button" id="submitTags" class="btn btn-lg btn-danger" data-toggle="tooltip"
+					title="Click this to delete all red tags. ">
+				Delete Red Tags
+			</button>
+
+		</div>
+		<input name="alltags" id="alltags" type="hidden" />
+		<input name="delTags" id="delTags" type="hidden" />
+	}
+</div>
+
+
+
+<div id="error" class="col-lg-12">
+	<div id="glyph">
+		<i class="glyphicon-exclamation-sign glyphicon"></i>
+	</div>
+	<div id="theEx">
+		<i class="glyphicon glyphicon glyphicon-remove"></i>
+	</div>
+	<div id="errorInfo">
+		<div id="invalid">Test Error</div>
+		<div id="notetext">distillery post-ironic coloring book. Kickstarter tousled single-origin coffee YOLO </div>
+	</div>
+</div>
+
+<script>
+	var delTagsArray = new Array();
+	var addTagsArray = new Array();
+	$(document).ready(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+
+
+	$("#entryBox").keyup(function (event) {
+		if (event.keyCode == 13) {
+			$("#addTag").click();
+		}
+	});
+
+	$('#addTag').click(function () {
+		var group = $("#dropdownMenuButton").val();
+		var tag = $.sanitize($('#entryBox').val());
+		var entname = "1_" + group + "_" + tag;
+
+		if (allLetter(tag) == false) {
+			errorBox("Invalid Tag!", "Cannot use underscore or pipe characters.");
+			return 0;
+		}
+
+		var newdiv = '<div name="' + entname + '" id="' + entname + '" class="tagdiv ' + group + '">' + tag + '</div>';
+		$(newdiv).hide().appendTo(".tagBox").fadeIn(1000);
+		$('.' + group).css("display", "inline-grid");
+
+		addTagsArray.push(entname);
+		$('#entryBox').val('');
+	});
+
+	$(document).on('click', '.tagdiv', function () {
+		var tagname = this.id;
+		var firstchar = tagname.charAt(0);
+		if (firstchar != "0") {
+
+			this.remove();
+			removeArr(addTagsArray, this.id);
+		} else {
+			//var tagboxContent = $('#delTags').val() + this.id;
+			console.log("#" + this.id);
+			if (this.style.background == "red") {
+				removeArr(delTagsArray, this.id);
+				this.style.background = "#147BD1"
+
+			} else {
+				delTagsArray.push(this.id);
+				this.style.background = "red"
+			}
+
+			//errorBox("Error.", "You cannot remove tags from here at the moment."); //  If you are sure you'd like to remove this tag <a href='./jayAdmin'>Go Here</a>.")
+			return 0;
+		}
+
+
+	});
+
+	function removeArr(arr, what) {
+		var found = arr.indexOf(what);
+
+		while (found !== -1) {
+			arr.splice(found, 1);
+			found = arr.indexOf(what);
+		}
+	}
+
+	$('#error').click(function () {
+		$('#error').fadeOut(679);
+	});
+
+	$('#dropdownMenuButton').change(function () {
+		var boxname = $("#dropdownMenuButton").val();
+		$('.School').css('display', 'none');
+		$('.Program').css('display', 'none');
+		$('.Pillars').css('display', 'none');
+		$('.OtherTags').css('display', 'none');
+		$('.Geo').css('display', 'none');
+		$('.Events').css('display', 'none');
+		$('.Athletics ').css('display', 'none');
+
+		if (boxname != "NA") {
+			$('.' + boxname).css("display", "inline-grid");
+
+			if ($('#tagsAndAll').css("display") == 'none') {
+				$('#tagsAndAll').slideDown("100");
+			}
+		}
+		if (boxname == "NA" && $('#tagsAndAll').css("display") != 'none') {
+			$('#tagsAndAll').slideUp("100");
+
+		}
+		$('#selectedBox').text($('#dropdownMenuButton option:selected').text() + ": ");
+	});
+
+	function errorBox(toptext, bottomtext) {
+		$('#invalid').text(toptext);
+		$('#notetext').text(bottomtext);
+		$('#error').show("slide", { direction: "right" }, 200);
+	}
+
+	function submitform() {
+		var alltags = "";
+		// alltags = getalltaginformation();
+		for (var x = 0; x < addTagsArray.length; x++) 
+		{
+			if (addTagsArray[x] != null) {
+				alltags += addTagsArray[x] + "|";
+			}
+		}
+		$('#alltags').val(alltags);
+		$("#delTags").val("na");
+		if (alltags != "") {
+			$('#addtagsForm').submit();
+		}
+	}
+
+	function submitformDel() {
+		var deltags = "";
+		for (var x = 0; x < delTagsArray.length; x++) {
+			if (delTagsArray[x] != null) {
+
+				deltags += delTagsArray[x] + "|";
+			}
+
+		}
+		$("#delTags").val(deltags);
+		$('#alltags').val("na");
+		if (deltags != "") {
+			$('#addtagsForm').submit();
+		}
+
+	}
+
+	function getalltaginformation() {
+		var tags = document.getElementsByClassName("tagdiv");
+		var taglist = "";
+		console.log(tags);
+		for (var x = 0; x < tags.length; x++) {
+			taglist += tags[x].id + "|";
+		}
+		$('#alltags').val(taglist);
+		return taglist
+		console.log(taglist);
+	}
+
+	function allLetter(inputtxt) {
+		//var letters = /^[a-zA-Z0-9\s]+$/;
+		var letters = /[_]/;
+		var thepipe = /[|]/;
+		// /^[A-Za-z0-9]+$/;
+
+		if (inputtxt.match(letters) || inputtxt.match(thepipe)) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	(function ($) {
+		$.sanitize = function (input) {
+			var output = input.replace(/<script[^>]*?>.*?<\/script>/gi, '').
+				replace(/<[\/\!]*?[^<>]*?>/gi, '').
+				replace(/<style[^>]*?>.*?<\/style>/gi, '').
+				replace(/<![\s\S]*?--[ \t\n\r]*>/gi, '');
+			return output;
+		};
+	})(jQuery);
+
+</script>
+
+<div class="row col-lg-12"></div>

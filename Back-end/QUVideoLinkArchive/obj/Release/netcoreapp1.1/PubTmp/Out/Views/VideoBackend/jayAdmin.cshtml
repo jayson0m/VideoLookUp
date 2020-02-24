@@ -1,0 +1,129 @@
+@model QUVideoLinkArchive.ViewModel.VideoBackendViewModel
+@{
+	ViewData["Title"] = "jayAdmin";
+}
+
+<h2>jayAdmin</h2>
+
+@using (Html.BeginForm(FormMethod.Post, new { id = "jayAdmin" }))
+{
+	<div class="row">
+		<input type="button" class="btn btn-danger" value="Delete Check Tags" onclick="onsub()" />
+	</div>
+	<!--<div class="row">
+		<p>hide:</p>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('school');">
+				Schools
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('athletics');">
+				athletics
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('events');">
+				events
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('geo');">
+				geo
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('othertags');">
+				othertags
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('pillars');">
+				pillars
+			</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-link" onclick="hideshit('program');">
+				program
+			</button>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-lg-5">
+			<p>search</p>
+			<input type="text" class="form-control input-sm" id="searchbox" />
+		</div>
+		<button id="search" class="btn" type="button">Search</button>
+	</div>-->
+	<div class="row">
+		<table class="table table-bordered">
+			<tr>
+				<th>del</th>
+				<th>group</th>
+				<th><button class="btn-link" id="namesort">name</button></th>
+				<th>misc</th>
+			</tr>
+
+			@foreach (var i in Model.GeneralTagList)
+			{
+				string tag = i.Tag;
+				string tag_id = i.Tag_ID;
+				string tag_group = i.Tag_Group;
+				string tdThingy = "td_" + tag_group + "_" + @tag_id; 
+				string cssID = tag_group + "_" + @tag_id
+
+				<tr class="@tag_group" >
+					<td><input type="checkbox" class="checkbox" name="check" value="@cssID" id="@cssID" /></td>
+					<td>@tag_group</td>
+					<td id="@tdThingy">@tag</td>
+					<td>
+						[@tag] -- [@tag_id] [@tag_group]
+					</td>
+				</tr>
+			}
+
+
+			
+
+		</table>
+		<input type="text" id="deleteThese" name="deleteThese" />
+	</div>
+
+}
+
+<script>
+
+	function hideshit(tagcat)
+	{
+		$("." + tagcat).hide();
+	}
+
+	function onsub()
+	{
+		var checks = document.getElementsByClassName("checkbox");
+		$('#deleteThese').val("");
+
+		for (var x = 0; x < checks.length; x++)
+		{
+			
+			if ($('#' + checks[x].id).prop('checked') == true)
+			{
+				console.log(checks[x].id + $('#' + checks[x].id).prop('checked'));
+				var pl = checks[x].id;
+				var boxCont = $('#deleteThese').val() + pl + "|";
+
+				$('#deleteThese').val(boxCont);
+
+
+			}
+
+		}
+		$('#jayAdmin').submit();
+		
+	}
+
+
+</script>
+
+

@@ -1,0 +1,169 @@
+﻿@using Microsoft.ApplicationInsights.AspNetCore
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - IMC Video Lookup (Admin Tool)</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&amp;subset=cyrillic,greek" rel="stylesheet">
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+    </environment>
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script> $.widget.bridge('uitooltip', $.ui.tooltip);</script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+		
+
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script> $.widget.bridge('uitooltip', $.ui.tooltip);</script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+		
+    </environment>
+	
+    @if (IsSectionDefined("AddToHead"))
+    {
+        @RenderSection("AddToHead", required: false)
+    }
+    <script>
+
+        function backtotop() {
+            if ($('#back-to-top').length) {
+                var scrollTrigger = 100, // px
+                    backToTop = function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > scrollTrigger) {
+                            $('#back-to-top').addClass('show');
+                        } else {
+                            $('#back-to-top').removeClass('show');
+                        }
+                    };
+                backToTop();
+                $(window).on('scroll', function () {
+                    backToTop();
+                });
+                $('#back-to-top').on('click', function (e) {
+                    e.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 700);
+                });
+            }
+        }
+    </script>
+</head>
+<body onload="backtotop()">
+<script>
+    $('#quModel').on('shown.bs.modal', function () {
+        $('#quInput').focus();
+    })
+</script>
+<div class="navbar navbar-default navbar-fixed-top vertical-center qucolor">
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="~/images/logo.png" style="width: 150px; height: auto; top: 13px !important; position: absolute"/>
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1" >
+
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" id="home"><a href="MainMenu">Home</a></li>
+             <li class="dropdown" id="video">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Video <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a href="AddLink">Add</a></li>
+                        <li role="presentation"><a href="ListLinks">Edit</a></li>
+                    </ul>
+              </li>
+            <li class="dropdown" id="tags">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tags <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="presentation" ><a href="addTag">Add or Edit Tags</a></li>
+                    <li role="presentation"><a href="RenameTags">Rename Tags</a></li>
+                </ul>
+            </li>
+            
+            <li role="presentation" id="admin"><a href="UserPage">Admin</a></li>
+            <li role=""><a href="#"></a></li>
+        </ul>
+
+    </div><!-- end collapse -->
+</div>
+
+<div class="container body-content">
+		
+    <p style="color:red;">
+        @TempData["error"]
+			
+    </p>
+
+    @RenderBody()
+    <hr />
+
+</div>
+
+
+
+@RenderSection("Scripts", required: false)
+<script>
+    @*class="active" 
+	home - Admin Menu
+	addvid - Add Video Object
+	editvideo - Link List or Edit Video Link
+	tags - Add Tag or Rename tags 
+	admin - User Admin
+	*@
+    var page = '@ViewData["Title"]';
+	
+    switch(page) {
+    case "Admin Menu":
+        $('#home').addClass('active');
+        break;
+        
+    case "Add Video Object":
+    case "Link List":
+    case "Edit Video Link":
+        $('#video').addClass('active');
+        break;
+        
+    case "Add Tag":
+    case "Rename tags":
+        $('#tags').addClass('active');
+        break;
+        
+    case "User Admin":
+     case "Delete":
+         $('#admin').addClass('active');
+
+    }
+	
+	
+</script>
+</body>
+
+</html>

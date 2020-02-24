@@ -1,0 +1,124 @@
+@model List<QUVideoLinkArchive.ViewModel.AccountManagerViewModel>
+
+@{
+	ViewBag.Title = "User Admin";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section AddToHead {
+	<script>
+
+	</script>
+
+}
+<h2>User Manager</h2>
+
+<a class="" href="./MainMenu">Main Menu</a>
+
+<br />
+<div class="container">
+	<div class="panel-default panel col-lg-3" style="background-color:slategrey">
+		<h2>Add User</h2>
+		@using (Html.BeginForm(null, null, FormMethod.Post, new { name = "useradd", id = "useradd", role = "form" }))
+		{
+			WriteLiteral("<p>Please Enter Users Quinnipiac Username: <br />");
+			@Html.TextBox("QU_User", "", new { @class = "form-control" });
+			WriteLiteral("</p>");
+			WriteLiteral("<p>User's Quinnipiac ID <br />");
+			@Html.TextBox("QUID", "", new { @class = "form-control" });
+			WriteLiteral("</p>");
+			WriteLiteral("<p>Is this User an Admin or User<br/>");
+			<div class="form-group">
+				<div class="radio-inline">
+					@Html.RadioButton("Admin", "Yes") Yes
+
+				</div>
+				<div class="radio-inline">
+					@Html.RadioButton("Admin", "No", new { Checked = "checked" }) No
+
+				</div>
+			</div>
+
+			<table class="table-condensed hidden">
+				<tr><td><p>Please select user permissions:</p></td></tr>
+				<tr>
+					<td>Language Placement:</td>
+					<td>@Html.CheckBox("PlacementLang")</td>
+				</tr>
+				<tr>
+					<td>Math Placement:</td>
+					<td>@Html.CheckBox("PlacementMath")</td>
+				</tr>
+				<tr>
+					<td>Math Placement Counts:</td>
+					<td>@Html.CheckBox("PlacementMathCounts")</td>
+				</tr>
+				<tr>
+					<td>Math Placement Query:</td>
+					<td>@Html.CheckBox("PlacementMathQuery")</td>
+				</tr>
+			</table>
+			<br />
+			<div class="form-group form-inline">
+				<button class='form-control form-inline' style="width:48%;" type='submit' id='addUser' value='addUser' name='Command'>Add User</button>
+				<button class='form-control form-inline pull-right' style="width:48%;" type="reset">Reset</button><br /><br />
+			</div>
+		}
+	</div>
+
+	<div class="panel panel-default col-lg-9">
+		<h2>User List</h2>
+
+		<table class="table-striped table">
+			<tr>
+				<th width="10%"></th>
+				<th>
+					User Name
+				</th>
+				<th>
+					QU ID
+				</th>
+				<th>
+					Admin
+				</th>
+			</tr>
+			@{
+			try
+			{
+				foreach (var item in Model)
+				{
+					WriteLiteral("<tr><td>");
+
+					string username = item.list_user;
+
+					string lang, math, counts, query, admin;
+
+					admin = item.list_admin;
+					admin = admin.Replace("Y", "Yes");
+					admin = admin.Replace("N", "No");
+
+					string CurrUN = ViewData["user"].ToString();
+
+					if (CurrUN != username)
+					{
+						string url = "delete?uid=" + username;
+						WriteLiteral("<p><a href=" + url + " >Delete</a></p>");
+					}
+
+					WriteLiteral("</td><td><p>");
+						@Html.DisplayFor(m => item.list_user);
+					WriteLiteral("</p></td><td><p>");
+
+						@Html.DisplayFor(m => item.list_QUID);
+					WriteLiteral("</p></td><td><p>");
+
+					WriteLiteral(admin);
+					WriteLiteral("</p></td></tr>");
+				}
+			}
+			catch (Exception e)
+			{ }
+			}
+		</table>
+	</div>
+</div>

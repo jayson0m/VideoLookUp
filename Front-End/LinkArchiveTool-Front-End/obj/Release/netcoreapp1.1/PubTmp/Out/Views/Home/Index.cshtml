@@ -1,0 +1,55 @@
+﻿@model LinkArchiveToolFrontEnd.Models.login
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*  Notes about Project:
+     Registrar:
+         DBs Used:
+             Registrar_Tool_Users in Internet
+         Views
+             Index, Useradmin
+         Model
+             registrar.cs
+    -----------------------------------------------
+
+*@
+@section AddToHead {
+    @*
+    <script>
+
+    function addme()
+    {
+
+        $('#Username').val ("JAMunro");
+        console.log("here...");
+        $('#Password').val("@TempData["jp203"]");
+        console.log("and.... here...");
+        $('#login').click();
+
+    }
+    </script>
+
+    *@
+}
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <h2 id="headerH1">Brand Strategy Video Catalog Database</h2>
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            @*REMOVE MEEEEE
+                <a href="#" onclick="javascript: addme();">DOOO ITTT</a>
+                *@
+            <p>@Html.TextBoxFor(m => m.Username, new { @class = "form-control input-lg", placeholder="username" }) </p>
+            
+
+            <p>@Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg", placeholder="password" }) </p>
+            <button type="submit" class="btn btn-primary pull-right" id="login">Login</button>
+
+
+        }
+    </div>
+</div>
+<div class="col-lg-12 row"></div>

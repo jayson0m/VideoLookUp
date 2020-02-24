@@ -1,0 +1,206 @@
+﻿body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide 
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+*/
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.qucolor {
+	background-color: #424b55 !important;
+}
+
+.quimg {
+	width: 150px;
+	height: auto;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+.red {
+    color: red;
+}
+
+.noborders > tbody > tr > td,
+.noborders > tbody > tr > th,
+.noborders > tfoot > tr > td,
+.noborders > tfoot > tr > th,
+.noborders > thead > tr > td,
+.noborders > thead > tr > th {
+    border: none !important;
+}
+
+
+#taglist ul {
+    padding-left: 0;
+    display: inline;
+    list-style-type: none;
+}
+
+.tag li {
+    list-style-type: none;
+    display: inline-block;
+    background: #147BD1;
+    margin-right: 10px;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+    .tag li:after {
+        content: " x";
+        padding: 0px 0px 0px 4px;
+    }
+
+    .tag li:hover {
+        background: lightblue;
+    }
+
+.tagdiv {
+    display: inline-block;
+    background: #147BD1;
+    margin-right: 10px;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-right: 5px;
+    margin-top: 5px;
+    position: relative;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+    .tagdiv:hover {
+        background: lightblue;
+    }
+
+
+.url {
+	font-size: small;
+
+	padding: 0px 0 8px 0;
+	color: darkslategrey;
+}
+.searchDesc {
+	padding-bottom:5px;
+}
+
+.searchMeta {
+	font-size:small;
+	
+}
+.searchMeta span {
+	padding: 0px 10px 0px 5px;
+}
+
+.btn-default.active {
+	background-color: #147BD1 !important;
+	color: white !important;
+}
+
+@media (min-width: 992px) {
+	.modal-dialog {
+		width: 50%;
+	}
+}
+
+.modal-body {
+	width: 100%;
+	overflow-y: auto !important;
+	max-height: 50% !important;
+	overflow-wrap: normal;
+}
+
+.form-group input {
+	width: 100% !important;
+}
+
+#SelectTags {
+	display: none;
+}
+
+.iconsize {
+	font-size: 24px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+#tips {
+	position: relative;
+}
+
+#tips-text {
+	display: none;
+}
+
+#headerH1 {
+	font-size: 36px;
+	font: 300 28px/ 36px "Open sans", "lucida grande", "Segoe UI", arial, verdana, tahoma, "Hiragino Kaku Gothic ProN", "Osaka", "Meiryo", "Yu Gothic", sans-serif;
+	color: rgba(0, 0, 0, 0.85);
+	
+}
+
+.biggertxt {
+	font-weight:700 !important;
+	font-stretch:ultra-expanded !important;
+	
+}
+
+
+.form-header {
+	padding-bottom:15px;
+}
+
+.tagCheck {
+	display: inline-block;
+	padding-left: 10px;
+	padding-top:8px;
+}

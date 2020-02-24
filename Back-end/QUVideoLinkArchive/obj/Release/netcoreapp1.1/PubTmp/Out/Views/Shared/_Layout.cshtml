@@ -1,0 +1,112 @@
+﻿<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - BSIC Video Database</title>
+
+	<environment names="Development">
+		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="~/css/site.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+	</environment>
+	<environment names="Staging,Production">
+		<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+			  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+			  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+		<link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+	</environment>
+	<environment names="Development">
+		<script src="~/lib/jquery/dist/jquery.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script> $.widget.bridge('uitooltip', $.ui.tooltip);</script>
+		<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="~/js/site.js" asp-append-version="true"></script>
+		
+
+	</environment>
+	<environment names="Staging,Production">
+		<script src="~/lib/jquery/dist/jquery.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script> $.widget.bridge('uitooltip', $.ui.tooltip);</script>
+		<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="~/js/site.min.js" asp-append-version="true"></script>
+		
+	</environment>
+
+	@Html.Raw(JavaScriptSnippet.FullScript)
+	@if (IsSectionDefined("AddToHead"))
+	{
+		@RenderSection("AddToHead", required: false)
+	}
+	<script>
+
+		function backtotop() {
+			if ($('#back-to-top').length) {
+				var scrollTrigger = 100, // px
+					backToTop = function () {
+						var scrollTop = $(window).scrollTop();
+						if (scrollTop > scrollTrigger) {
+							$('#back-to-top').addClass('show');
+						} else {
+							$('#back-to-top').removeClass('show');
+						}
+					};
+				backToTop();
+				$(window).on('scroll', function () {
+					backToTop();
+				});
+				$('#back-to-top').on('click', function (e) {
+					e.preventDefault();
+					$('html,body').animate({
+						scrollTop: 0
+					}, 700);
+				});
+			}
+		}
+	</script>
+</head>
+<body onload="backtotop()">
+	<script>
+			$('#quModel').on('shown.bs.modal', function () {
+				$('#quInput').focus()
+			})
+	</script>
+	<div class="navbar navbar-default navbar-fixed-top vertical-center qucolor">
+		<div class="collapse navbar-collapse" style="top:10px; !important; position:relative;">
+			<center><img src="~/images/logo.png" style="width: 150px; height:auto;" /></center>
+
+		</div><!-- end collapse -->
+	</div>
+
+	<div class="container body-content">
+		<p>@*
+	@Html.ActionLink("Home", "Index", "Home")
+	@if (ViewContext.RouteData.Values["controller"].ToString() != "Home")
+	{
+		@:> @Html.ActionLink(ViewContext.RouteData.Values["controller"].ToString(), "Index", ViewContext.RouteData.Values["controller"].ToString())
+	}
+	@if (ViewContext.RouteData.Values["action"].ToString() != "Index")
+	{
+		@:> @Html.ActionLink(ViewContext.RouteData.DataTokens["area"].ToString(), ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+	}
+		*@
+
+		</p>
+		<p style="color:red;">
+			@TempData["error"]
+		</p>
+
+		@RenderBody()
+		<hr />
+
+	</div>
+
+
+
+	@RenderSection("Scripts", required: false)
+</body>
+
+</html>

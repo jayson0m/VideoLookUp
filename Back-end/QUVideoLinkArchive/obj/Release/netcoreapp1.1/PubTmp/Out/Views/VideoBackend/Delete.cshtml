@@ -1,0 +1,19 @@
+@model QUVideoLinkArchive.ViewModel.AccountManagerViewModel
+
+
+@{
+	ViewBag.Title = "Delete";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete from Video Link Archive?</h2>
+You are about to delete<b> @ViewBag.username </b>from the database.  <br /> <strong>Are you sure? </strong> <br />
+<br />
+@using (Html.BeginForm())
+{
+
+	<button type="submit" name="deluser" id="deluser" value="@ViewBag.username">Delete User</button>
+}
+<br />
+@Html.ActionLink("Go Back", "UserPage")
+

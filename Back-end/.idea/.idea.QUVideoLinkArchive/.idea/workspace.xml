@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b79a814-2610-4ddc-af3b-9da9c0006da5" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;h1&gt;</find>
+      <find>delete</find>
+      <find>textarea</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/MainMenu.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/addTag.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/RenameTags.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/jayAdmin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/ListLinks.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/AddLink.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/UserPage.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/EditLink.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Models/Error.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/ViewModel/VideoBackendViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Models/QUToolsUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/ViewModel/AccountManagerViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Models/login.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Models/VideoBackEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Models/AccountManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Controllers/VideoBackendController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QUVideoLinkArchive/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/Shared/Layout.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/Delete.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Models/Error.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Startup.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Controllers/VideoBackendController.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/css/addtags.css" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/css/addlink.css" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/EditLink.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/addTag.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/css/site.min.css" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/RenameTags.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/css/fonts.css" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/appsettings.json" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/jayAdmin.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/ListLinks.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/MainMenu.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/UserPage.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/wwwroot/js/site.js" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/AddLink.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Views/VideoBackend/Index.cshtml" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Models/QUToolsUtilities.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Models/VideoBackEnd.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Models/AccountManager.cs" />
+        <option value="$PROJECT_DIR$/QUVideoLinkArchive/Models/login.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YG1xlZ7GEjpQO8qvAGhWrp7WC1" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Production">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/QUVideoLinkArchive/bin/Release/netcoreapp2.0/QUVideoLinkArchive.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QUVideoLinkArchive" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/QUVideoLinkArchive/QUVideoLinkArchive.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Project.Production" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b79a814-2610-4ddc-af3b-9da9c0006da5" name="Default" comment="" />
+      <created>1520871430427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520871430427</updated>
+      <workItem from="1520871432069" duration="597000" />
+      <workItem from="1520872048811" duration="305000" />
+      <workItem from="1521033812743" duration="3213000" />
+      <workItem from="1521479862834" duration="7823000" />
+      <workItem from="1521553215879" duration="6301000" />
+      <workItem from="1521724354693" duration="303000" />
+      <workItem from="1521737756088" duration="5762000" />
+      <workItem from="1522260907862" duration="2926000" />
+      <workItem from="1522267436009" duration="575000" />
+      <workItem from="1522337406139" duration="391000" />
+      <workItem from="1582554373020" duration="958000" />
+      <workItem from="1582555737227" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
